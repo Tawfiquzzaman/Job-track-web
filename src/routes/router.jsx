@@ -7,9 +7,12 @@ const router = createBrowserRouter(
     [
         {
             path: '/',
+            loader: () => fetch('jobs.json'),
             element: <HomeLayout></HomeLayout>,
             children: [
                 {
+                    index: true,
+                    
                     path: "",
                     element: <Home></Home>,
 

@@ -1,9 +1,12 @@
-import React from "react";
-import { Outlet } from "react-router";
+import React, { Suspense } from "react";
+import { Outlet, useLoaderData } from "react-router";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import Companies from "../pages/Companies";
 
 const HomeLayout = () => {
+  const data = useLoaderData();
+  console.log(data);
   return (
     <div>
       <header>
@@ -14,6 +17,7 @@ const HomeLayout = () => {
       <main className=""> 
         <section className="main">
           <Outlet></Outlet>
+          <Companies data={data}></Companies>
         </section>
       </main>
       <footer className="">

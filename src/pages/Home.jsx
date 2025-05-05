@@ -16,7 +16,7 @@ const Home = () => {
           <p className="mb-5">
           "Discover thousands of job opportunities from leading companies across various industries. Whether you're just starting out or looking to take the next big step in your career, our platform makes it easy to search, apply, and connect with employers — all in one place."
           </p>
-          <button className="btn bg-[#3973ac] text-white rounded-full w-20">Explore</button>
+          <button className="btn bg-[#3973ac] text-white rounded-full p-6">Explore Renowned Companies</button>
         </div>
       </div>
     </div>
