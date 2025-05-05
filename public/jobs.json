@@ -1,0 +1,929 @@
+[
+    {
+      "id": "1",
+      "name": "Brain Station 23 Ltd.",
+      "logo": "https://brainstation-23.com/wp-content/uploads/2020/03/brainstation23-logo.png",
+      "location": "Dhaka, Bangladesh",
+      "website": "https://brainstation-23.com",
+      "industry": "Software Development",
+      "jobs": [
+        {
+          "id": "job-001",
+          "title": "Frontend Developer",
+          "bannerImage": "https://brainstation-23.com/wp-content/uploads/2020/03/frontend-developer.jpg",
+          "location": "Dhaka, Bangladesh",
+          "salary": "৳60,000 - ৳80,000 per month",
+          "jobType": "Full-time",
+          "description": "We are seeking a skilled Frontend Developer to join our dynamic team. The ideal candidate will have experience with modern JavaScript frameworks and a passion for creating intuitive user interfaces.",
+          "requirements": [
+            "Proficient in HTML, CSS, and JavaScript",
+            "Experience with React.js or Angular",
+            "Familiarity with RESTful APIs",
+            "Understanding of responsive design principles",
+            "Excellent problem-solving skills"
+          ]
+        },
+        {
+          "id": "job-002",
+          "title": "Backend Developer",
+          "bannerImage": "https://brainstation-23.com/wp-content/uploads/2020/03/backend-developer.jpg",
+          "location": "Dhaka, Bangladesh",
+          "salary": "৳70,000 - ৳90,000 per month",
+          "jobType": "Full-time",
+          "description": "Join our backend team to develop robust and scalable server-side applications. The candidate should be proficient in Node.js and have experience with database management.",
+          "requirements": [
+            "Strong knowledge of Node.js and Express.js",
+            "Experience with MongoDB or MySQL",
+            "Understanding of RESTful API design",
+            "Familiarity with Git and version control",
+            "Ability to write clean and efficient code"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Kaz Software",
+      "logo": "https://kaz.com.bd/wp-content/uploads/2020/01/kaz-logo.png",
+      "location": "Dhaka, Bangladesh",
+      "website": "https://kaz.com.bd",
+      "industry": "Custom Software Development",
+      "jobs": [
+        {
+          "id": "job-003",
+          "title": "Full Stack Developer",
+          "bannerImage": "https://kaz.com.bd/wp-content/uploads/2020/01/fullstack-developer.jpg",
+          "location": "Dhaka, Bangladesh",
+          "salary": "৳80,000 - ৳100,000 per month",
+          "jobType": "Full-time",
+          "description": "We are looking for a Full Stack Developer to build and maintain web applications. The ideal candidate should be comfortable working with both frontend and backend technologies.",
+          "requirements": [
+            "Proficient in JavaScript, HTML, and CSS",
+            "Experience with React.js and Node.js",
+            "Knowledge of database systems like PostgreSQL",
+            "Understanding of RESTful APIs",
+            "Strong problem-solving abilities"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "REVE Systems",
+      "logo": "https://www.revesoft.com/images/logo.png",
+      "location": "Dhaka, Bangladesh",
+      "website": "https://www.revesoft.com",
+      "industry": "Telecommunication Software",
+      "jobs": [
+        {
+          "id": "job-004",
+          "title": "Software Engineer",
+          "bannerImage": "https://www.revesoft.com/images/software-engineer.jpg",
+          "location": "Dhaka, Bangladesh",
+          "salary": "৳65,000 - ৳85,000 per month",
+          "jobType": "Full-time",
+          "description": "Join our engineering team to develop innovative telecommunication solutions. The candidate should have a strong background in software development and a keen interest in VoIP technologies.",
+          "requirements": [
+            "Proficient in C/C++ or Java",
+            "Experience with VoIP protocols",
+            "Understanding of network programming",
+            "Familiarity with Linux environments",
+            "Strong analytical skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Southtech Limited",
+      "logo": "https://southtechgroup.com/wp-content/uploads/2020/01/southtech-logo.png",
+      "location": "Dhaka, Bangladesh",
+      "website": "https://southtechgroup.com",
+      "industry": "Enterprise Software Solutions",
+      "jobs": [
+        {
+          "id": "job-005",
+          "title": "UI/UX Designer",
+          "bannerImage": "https://southtechgroup.com/wp-content/uploads/2020/01/ui-ux-designer.jpg",
+          "location": "Dhaka, Bangladesh",
+          "salary": "৳50,000 - ৳70,000 per month",
+          "jobType": "Full-time",
+          "description": "We are seeking a creative UI/UX Designer to design user-centric interfaces for our enterprise applications. The candidate should have a strong portfolio showcasing design projects.",
+          "requirements": [
+            "Proficiency in design tools like Adobe XD or Figma",
+            "Experience with user research and testing",
+            "Understanding of design principles and typography",
+            "Ability to create wireframes and prototypes",
+            "Strong communication skills"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "LeadSoft Bangladesh Limited",
+      "logo": "https://www.leadsoft.com.bd/wp-content/uploads/2020/01/leadsoft-logo.png",
+      "location": "Dhaka, Bangladesh",
+      "website": "https://www.leadsoft.com.bd",
+      "industry": "Financial Software Solutions",
+      "jobs": [
+        {
+          "id": "job-006",
+          "title": "QA Engineer",
+          "bannerImage": "https://www.leadsoft.com.bd/wp-content/uploads/2020/01/qa-engineer.jpg",
+          "location": "Dhaka, Bangladesh",
+          "salary": "৳55,000 - ৳75,000 per month",
+          "jobType": "Full-time",
+          "description": "We are looking for a QA Engineer to ensure the quality of our financial software products. The candidate should have experience in manual and automated testing.",
+          "requirements": [
+            "Experience with test automation tools",
+            "Knowledge of software QA methodologies",
+            "Ability to write clear test cases",
+            "Understanding of SDLC",
+            "Strong attention to detail"
+          ]
+        }
+      ]
+    },
+    {
+        "id": "6",
+        "name": "Enosis Solutions",
+        "logo": "https://enosisbd.com/wp-content/uploads/2020/01/enosis-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://enosisbd.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-007",
+            "title": "Mobile App Developer",
+            "bannerImage": "https://enosisbd.com/wp-content/uploads/2020/01/mobile-app-developer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳70,000 - ৳90,000 per month",
+            "jobType": "Full-time",
+            "description": "We are seeking a skilled Mobile App Developer to join our team. The ideal candidate will have experience in developing cross-platform mobile applications.",
+            "requirements": [
+              "Proficient in Flutter or React Native",
+              "Experience with RESTful APIs",
+              "Understanding of mobile UI/UX design principles",
+              "Familiarity with Git and version control",
+              "Strong problem-solving skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "Dcastalia Limited",
+        "logo": "https://dcastalia.com/wp-content/uploads/2020/01/dcastalia-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://dcastalia.com",
+        "industry": "Custom Software Development",
+        "jobs": [
+          {
+            "id": "job-008",
+            "title": "Project Manager",
+            "bannerImage": "https://dcastalia.com/wp-content/uploads/2020/01/project-manager.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳100,000 - ৳120,000 per month",
+            "jobType": "Full-time",
+            "description": "We are looking for an experienced Project Manager to lead software development projects and ensure timely delivery.",
+            "requirements": [
+              "Proven experience in project management",
+              "Strong understanding of software development life cycle",
+              "Excellent communication and leadership skills",
+              "Ability to manage multiple projects simultaneously",
+              "Familiarity with project management tools"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "BJIT Limited",
+        "logo": "https://bjitgroup.com/wp-content/uploads/2020/01/bjit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://bjitgroup.com",
+        "industry": "IT Consulting",
+        "jobs": [
+          {
+            "id": "job-009",
+            "title": "DevOps Engineer",
+            "bannerImage": "https://bjitgroup.com/wp-content/uploads/2020/01/devops-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳80,000 - ৳100,000 per month",
+            "jobType": "Full-time",
+            "description": "Join our team as a DevOps Engineer to streamline our development and deployment processes.",
+            "requirements": [
+              "Experience with CI/CD pipelines",
+              "Proficient in Docker and Kubernetes",
+              "Knowledge of cloud platforms like AWS or Azure",
+              "Strong scripting skills",
+              "Understanding of system monitoring tools"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "TigerIT Bangladesh Ltd.",
+        "logo": "https://tigerit.com/wp-content/uploads/2020/01/tigerit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://tigerit.com",
+        "industry": "Security Software",
+        "jobs": [
+          {
+            "id": "job-010",
+            "title": "Security Analyst",
+            "bannerImage": "https://tigerit.com/wp-content/uploads/2020/01/security-analyst.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳90,000 - ৳110,000 per month",
+            "jobType": "Full-time",
+            "description": "We are seeking a Security Analyst to assess and improve our software security measures.",
+            "requirements": [
+              "Experience in security risk assessment",
+              "Knowledge of encryption and authentication protocols",
+              "Familiarity with security compliance standards",
+              "Strong analytical skills",
+              "Ability to work under pressure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "Cefalo Bangladesh Ltd.",
+        "logo": "https://cefalo.com/wp-content/uploads/2020/01/cefalo-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://cefalo.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-011",
+            "title": "Software Architect",
+            "bannerImage": "https://cefalo.com/wp-content/uploads/2020/01/software-architect.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳120,000 - ৳150,000 per month",
+            "jobType": "Full-time",
+            "description": "We are looking for a Software Architect to design and oversee the development of complex software systems.",
+            "requirements": [
+              "Extensive experience in software architecture",
+              "Strong knowledge of design patterns",
+              "Proficiency in multiple programming languages",
+              "Excellent problem-solving skills",
+              "Ability to mentor development teams"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Brain Station 23 Ltd.",
+        "logo": "https://brainstation-23.com/wp-content/uploads/2020/03/brainstation23-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://brainstation-23.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-012",
+            "title": "Data Engineer",
+            "bannerImage": "https://brainstation-23.com/wp-content/uploads/2020/03/data-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳90,000 - ৳110,000 per month",
+            "jobType": "Full-time",
+            "description": "Seeking a Data Engineer to manage and optimize data pipelines and workflows.",
+            "requirements": [
+              "Strong knowledge of SQL and Python",
+              "Experience with ETL tools",
+              "Familiarity with cloud platforms (AWS, GCP)",
+              "Understanding of data warehousing",
+              "Good communication and teamwork"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "BJIT Limited",
+        "logo": "https://bjitgroup.com/wp-content/uploads/2020/01/bjit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://bjitgroup.com",
+        "industry": "IT Consulting",
+        "jobs": [
+          {
+            "id": "job-013",
+            "title": "UI Engineer",
+            "bannerImage": "https://bjitgroup.com/wp-content/uploads/2020/01/ui-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳60,000 - ৳80,000 per month",
+            "jobType": "Full-time",
+            "description": "UI Engineer needed to implement modern, scalable user interfaces for web apps.",
+            "requirements": [
+              "Strong HTML5, CSS3 and JS skills",
+              "Experience with Tailwind or Bootstrap",
+              "Good understanding of accessibility and SEO",
+              "Experience with React is a plus",
+              "Strong collaboration skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "SELISE Digital Platforms",
+        "logo": "https://selisegroup.com/images/selise-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://selisegroup.com",
+        "industry": "Digital Transformation",
+        "jobs": [
+          {
+            "id": "job-014",
+            "title": "Business Analyst",
+            "bannerImage": "https://selisegroup.com/images/business-analyst.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳70,000 - ৳90,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a Business Analyst to bridge between clients and development teams.",
+            "requirements": [
+              "Strong analytical and communication skills",
+              "Understanding of Agile methodology",
+              "Experience in requirements gathering",
+              "Good documentation abilities",
+              "Knowledge of BPMN is a plus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Southtech Limited",
+        "logo": "https://southtechgroup.com/wp-content/uploads/2020/01/southtech-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://southtechgroup.com",
+        "industry": "Enterprise Software Solutions",
+        "jobs": [
+          {
+            "id": "job-015",
+            "title": "Technical Support Engineer",
+            "bannerImage": "https://southtechgroup.com/wp-content/uploads/2020/01/tech-support.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳40,000 - ৳60,000 per month",
+            "jobType": "Full-time",
+            "description": "Provide technical support for enterprise clients, troubleshoot software issues, and ensure system uptime.",
+            "requirements": [
+              "Knowledge of SQL and troubleshooting methods",
+              "Good communication skills",
+              "Experience with ticketing systems",
+              "Familiarity with enterprise software",
+              "Willingness to work in shifts"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "TechCare",
+        "logo": "https://techcarebd.com/images/logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://techcarebd.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-016",
+            "title": "WordPress Developer",
+            "bannerImage": "https://techcarebd.com/images/wordpress-dev.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳35,000 - ৳55,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a WordPress Developer to build and maintain dynamic websites.",
+            "requirements": [
+              "Experience with WordPress theme and plugin development",
+              "Good knowledge of PHP and MySQL",
+              "Familiarity with Elementor/Divi",
+              "Strong debugging and optimization skills",
+              "Basic knowledge of SEO"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "name": "Brain Station 23 Ltd.",
+        "logo": "https://brainstation-23.com/wp-content/uploads/2020/03/brainstation23-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://brainstation-23.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-012",
+            "title": "Data Engineer",
+            "bannerImage": "https://brainstation-23.com/wp-content/uploads/2020/03/data-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳90,000 - ৳110,000 per month",
+            "jobType": "Full-time",
+            "description": "Seeking a Data Engineer to manage and optimize data pipelines and workflows.",
+            "requirements": [
+              "Strong knowledge of SQL and Python",
+              "Experience with ETL tools",
+              "Familiarity with cloud platforms (AWS, GCP)",
+              "Understanding of data warehousing",
+              "Good communication and teamwork"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "12",
+        "name": "BJIT Limited",
+        "logo": "https://bjitgroup.com/wp-content/uploads/2020/01/bjit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://bjitgroup.com",
+        "industry": "IT Consulting",
+        "jobs": [
+          {
+            "id": "job-013",
+            "title": "UI Engineer",
+            "bannerImage": "https://bjitgroup.com/wp-content/uploads/2020/01/ui-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳60,000 - ৳80,000 per month",
+            "jobType": "Full-time",
+            "description": "UI Engineer needed to implement modern, scalable user interfaces for web apps.",
+            "requirements": [
+              "Strong HTML5, CSS3 and JS skills",
+              "Experience with Tailwind or Bootstrap",
+              "Good understanding of accessibility and SEO",
+              "Experience with React is a plus",
+              "Strong collaboration skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "13",
+        "name": "SELISE Digital Platforms",
+        "logo": "https://selisegroup.com/images/selise-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://selisegroup.com",
+        "industry": "Digital Transformation",
+        "jobs": [
+          {
+            "id": "job-014",
+            "title": "Business Analyst",
+            "bannerImage": "https://selisegroup.com/images/business-analyst.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳70,000 - ৳90,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a Business Analyst to bridge between clients and development teams.",
+            "requirements": [
+              "Strong analytical and communication skills",
+              "Understanding of Agile methodology",
+              "Experience in requirements gathering",
+              "Good documentation abilities",
+              "Knowledge of BPMN is a plus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "14",
+        "name": "Southtech Limited",
+        "logo": "https://southtechgroup.com/wp-content/uploads/2020/01/southtech-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://southtechgroup.com",
+        "industry": "Enterprise Software Solutions",
+        "jobs": [
+          {
+            "id": "job-015",
+            "title": "Technical Support Engineer",
+            "bannerImage": "https://southtechgroup.com/wp-content/uploads/2020/01/tech-support.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳40,000 - ৳60,000 per month",
+            "jobType": "Full-time",
+            "description": "Provide technical support for enterprise clients, troubleshoot software issues, and ensure system uptime.",
+            "requirements": [
+              "Knowledge of SQL and troubleshooting methods",
+              "Good communication skills",
+              "Experience with ticketing systems",
+              "Familiarity with enterprise software",
+              "Willingness to work in shifts"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "15",
+        "name": "TechCare",
+        "logo": "https://techcarebd.com/images/logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://techcarebd.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-016",
+            "title": "WordPress Developer",
+            "bannerImage": "https://techcarebd.com/images/wordpress-dev.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳35,000 - ৳55,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a WordPress Developer to build and maintain dynamic websites.",
+            "requirements": [
+              "Experience with WordPress theme and plugin development",
+              "Good knowledge of PHP and MySQL",
+              "Familiarity with Elementor/Divi",
+              "Strong debugging and optimization skills",
+              "Basic knowledge of SEO"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "16",
+        "name": "Kaz Software Limited",
+        "logo": "https://www.kaz.com.bd/wp-content/uploads/2020/01/kaz-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.kaz.com.bd",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-017",
+            "title": "Full Stack Developer",
+            "bannerImage": "https://www.kaz.com.bd/wp-content/uploads/2020/01/fullstack-developer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳80,000 - ৳100,000 per month",
+            "jobType": "Full-time",
+            "description": "Join our dynamic team as a Full Stack Developer to build and maintain web applications.",
+            "requirements": [
+              "Proficient in JavaScript, Node.js, and React",
+              "Experience with RESTful APIs",
+              "Knowledge of database systems like MongoDB or PostgreSQL",
+              "Familiarity with version control systems like Git",
+              "Strong problem-solving skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "17",
+        "name": "Orbit Informatics",
+        "logo": "https://www.orbitinformatics.com/wp-content/uploads/2020/01/orbit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.orbitinformatics.com",
+        "industry": "IT Services",
+        "jobs": [
+          {
+            "id": "job-018",
+            "title": "Digital Marketing Specialist",
+            "bannerImage": "https://www.orbitinformatics.com/wp-content/uploads/2020/01/digital-marketing.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳50,000 - ৳70,000 per month",
+            "jobType": "Full-time",
+            "description": "We are looking for a Digital Marketing Specialist to develop and implement marketing strategies.",
+            "requirements": [
+              "Experience with SEO and SEM",
+              "Proficiency in Google Analytics and AdWords",
+              "Strong understanding of social media platforms",
+              "Excellent communication skills",
+              "Ability to analyze market trends"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "Zaman IT",
+        "logo": "https://www.zamanit.com/wp-content/uploads/2020/01/zamanit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.zamanit.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-019",
+            "title": "UI/UX Designer",
+            "bannerImage": "https://www.zamanit.com/wp-content/uploads/2020/01/ui-ux-designer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳60,000 - ৳80,000 per month",
+            "jobType": "Full-time",
+            "description": "Seeking a creative UI/UX Designer to design user-friendly interfaces for our applications.",
+            "requirements": [
+              "Proficiency in design tools like Adobe XD or Figma",
+              "Strong portfolio showcasing UI/UX design skills",
+              "Understanding of user-centered design principles",
+              "Ability to create wireframes and prototypes",
+              "Excellent communication skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "Magnito Digital",
+        "logo": "https://www.magnitodigital.com/wp-content/uploads/2020/01/magnito-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.magnitodigital.com",
+        "industry": "Digital Marketing",
+        "jobs": [
+          {
+            "id": "job-020",
+            "title": "Content Writer",
+            "bannerImage": "https://www.magnitodigital.com/wp-content/uploads/2020/01/content-writer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳40,000 - ৳60,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a Content Writer to create engaging content for our digital platforms.",
+            "requirements": [
+              "Excellent writing and editing skills",
+              "Experience in content creation for digital media",
+              "Knowledge of SEO best practices",
+              "Ability to research and write on various topics",
+              "Strong attention to detail"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "REVE Systems",
+        "logo": "https://www.revesoft.com/wp-content/uploads/2020/01/reve-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.revesoft.com",
+        "industry": "Telecommunication Software",
+        "jobs": [
+          {
+            "id": "job-021",
+            "title": "Network Engineer",
+            "bannerImage": "https://www.revesoft.com/wp-content/uploads/2020/01/network-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳70,000 - ৳90,000 per month",
+            "jobType": "Full-time",
+            "description": "Join our team as a Network Engineer to manage and optimize our network infrastructure.",
+            "requirements": [
+              "Strong knowledge of networking protocols",
+              "Experience with network monitoring tools",
+              "Ability to troubleshoot network issues",
+              "Familiarity with security best practices",
+              "Excellent problem-solving skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "16",
+        "name": "Kaz Software Limited",
+        "logo": "https://www.kaz.com.bd/wp-content/uploads/2020/01/kaz-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.kaz.com.bd",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-022",
+            "title": "QA Engineer",
+            "bannerImage": "https://www.kaz.com.bd/wp-content/uploads/2020/01/qa-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳60,000 - ৳80,000 per month",
+            "jobType": "Full-time",
+            "description": "Seeking a QA Engineer to ensure high quality in software releases.",
+            "requirements": [
+              "Experience in manual and automated testing",
+              "Familiarity with Selenium or similar tools",
+              "Knowledge of bug tracking systems",
+              "Understanding of SDLC and Agile",
+              "Attention to detail"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "17",
+        "name": "Orbit Informatics",
+        "logo": "https://www.orbitinformatics.com/wp-content/uploads/2020/01/orbit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.orbitinformatics.com",
+        "industry": "IT Services",
+        "jobs": [
+          {
+            "id": "job-023",
+            "title": "Project Manager",
+            "bannerImage": "https://www.orbitinformatics.com/wp-content/uploads/2020/01/project-manager.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳90,000 - ৳120,000 per month",
+            "jobType": "Full-time",
+            "description": "Project Manager needed to lead teams and deliver projects on time.",
+            "requirements": [
+              "Proven project management experience",
+              "Excellent communication and leadership skills",
+              "Knowledge of Agile/Scrum methodologies",
+              "Experience with Jira or similar tools",
+              "Strong client management skills"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "Zaman IT",
+        "logo": "https://www.zamanit.com/wp-content/uploads/2020/01/zamanit-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.zamanit.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-024",
+            "title": "DevOps Engineer",
+            "bannerImage": "https://www.zamanit.com/wp-content/uploads/2020/01/devops-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳85,000 - ৳110,000 per month",
+            "jobType": "Full-time",
+            "description": "Join our infrastructure team as a DevOps Engineer.",
+            "requirements": [
+              "Proficient in CI/CD tools",
+              "Experience with Docker and Kubernetes",
+              "Familiar with AWS, Azure or GCP",
+              "Strong scripting skills (Bash, Python)",
+              "Monitoring and logging expertise"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "19",
+        "name": "Magnito Digital",
+        "logo": "https://www.magnitodigital.com/wp-content/uploads/2020/01/magnito-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.magnitodigital.com",
+        "industry": "Digital Marketing",
+        "jobs": [
+          {
+            "id": "job-025",
+            "title": "Graphic Designer",
+            "bannerImage": "https://www.magnitodigital.com/wp-content/uploads/2020/01/graphic-designer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳40,000 - ৳60,000 per month",
+            "jobType": "Full-time",
+            "description": "We are looking for a Graphic Designer to create visual content for digital campaigns.",
+            "requirements": [
+              "Proficiency in Adobe Creative Suite",
+              "Strong design portfolio",
+              "Understanding of brand identity",
+              "Ability to work under tight deadlines",
+              "Team player with creativity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "20",
+        "name": "REVE Systems",
+        "logo": "https://www.revesoft.com/wp-content/uploads/2020/01/reve-logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.revesoft.com",
+        "industry": "Telecommunication Software",
+        "jobs": [
+          {
+            "id": "job-026",
+            "title": "Android Developer",
+            "bannerImage": "https://www.revesoft.com/wp-content/uploads/2020/01/android-developer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳75,000 - ৳95,000 per month",
+            "jobType": "Full-time",
+            "description": "REVE Systems is looking for an Android Developer to develop robust mobile applications.",
+            "requirements": [
+              "Strong knowledge of Java/Kotlin",
+              "Experience with Android SDK and RESTful APIs",
+              "Familiar with Google Play deployment",
+              "Understanding of mobile UI/UX",
+              "Knowledge of Firebase is a plus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "21",
+        "name": "Technobd Web Solutions",
+        "logo": "https://technobd.com/assets/images/logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://technobd.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-027",
+            "title": "Backend Developer",
+            "bannerImage": "https://technobd.com/assets/images/backend-developer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳85,000 - ৳100,000 per month",
+            "jobType": "Full-time",
+            "description": "Looking for a skilled backend developer to build robust APIs and server-side logic.",
+            "requirements": [
+              "Strong knowledge of Node.js or Python (Django/Flask)",
+              "Experience with relational and NoSQL databases",
+              "Understanding of API architecture and microservices",
+              "Knowledge of containerization (Docker)",
+              "Familiarity with CI/CD pipelines"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "22",
+        "name": "DataSoft Systems Bangladesh Ltd.",
+        "logo": "https://www.datasoft-bd.com/wp-content/uploads/2020/10/logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.datasoft-bd.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-028",
+            "title": "Software Engineer (AI & ML)",
+            "bannerImage": "https://www.datasoft-bd.com/wp-content/uploads/2020/10/ml-engineer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳100,000 - ৳130,000 per month",
+            "jobType": "Full-time",
+            "description": "Develop and optimize AI-based software applications for enterprise solutions.",
+            "requirements": [
+              "Proficient in Python and ML libraries (TensorFlow, PyTorch)",
+              "Experience in data preprocessing and model training",
+              "Knowledge of NLP or Computer Vision",
+              "Strong math and statistics background",
+              "Experience with cloud ML services (AWS/GCP)"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "name": "iBOS Limited",
+        "logo": "https://ibos.io/assets/images/logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://ibos.io",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-029",
+            "title": "Product Designer",
+            "bannerImage": "https://ibos.io/assets/images/product-designer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳60,000 - ৳85,000 per month",
+            "jobType": "Full-time",
+            "description": "Seeking a Product Designer to craft elegant solutions and user flows.",
+            "requirements": [
+              "Strong UI/UX design experience",
+              "Familiar with design systems and wireframing tools",
+              "Knowledge of HTML/CSS is a plus",
+              "Ability to collaborate with developers and PMs",
+              "Great visual sense and creativity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "24",
+        "name": "Echologyx Ltd.",
+        "logo": "https://echologyx.com/images/logo.png",
+        "location": "Chattogram, Bangladesh",
+        "website": "https://echologyx.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-030",
+            "title": "Business Analyst",
+            "bannerImage": "https://echologyx.com/images/business-analyst.jpg",
+            "location": "Chattogram, Bangladesh",
+            "salary": "৳70,000 - ৳90,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a Business Analyst to identify product gaps and drive software requirements.",
+            "requirements": [
+              "Strong analytical and documentation skills",
+              "Experience working with development teams",
+              "Understanding of software development lifecycle",
+              "Excellent stakeholder communication",
+              "Knowledge of UML or BPMN is a plus"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "25",
+        "name": "Nascenia Ltd.",
+        "logo": "https://nascenia.com/wp-content/themes/nascenia/images/logo.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://nascenia.com",
+        "industry": "Software Development",
+        "jobs": [
+          {
+            "id": "job-031",
+            "title": "Technical Content Writer",
+            "bannerImage": "https://nascenia.com/wp-content/uploads/2022/06/technical-writer.jpg",
+            "location": "Dhaka, Bangladesh",
+            "salary": "৳50,000 - ৳65,000 per month",
+            "jobType": "Full-time",
+            "description": "We are hiring a tech-savvy writer to produce documentation, blogs, and product manuals.",
+            "requirements": [
+              "Excellent writing skills with tech knowledge",
+              "Understanding of software documentation formats",
+              "Experience with Markdown or HTML is a plus",
+              "Ability to grasp complex systems and simplify them",
+              "Portfolio or sample writing required"
+            ]
+          }
+        ]
+      }
+  ]
+  
