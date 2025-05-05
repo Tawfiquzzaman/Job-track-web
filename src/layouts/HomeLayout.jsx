@@ -7,16 +7,16 @@ const HomeLayout = () => {
   return (
     <div>
       <header>
-        <nav>
+        <nav className="">
           <Navbar></Navbar>
         </nav>
       </header>
-      <main>
+      <main className=""> 
         <section className="main">
           <Outlet></Outlet>
         </section>
       </main>
-      <footer>
+      <footer className="">
         <Footer></Footer>
       </footer>
     </div>
