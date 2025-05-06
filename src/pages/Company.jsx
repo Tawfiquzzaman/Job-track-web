@@ -3,7 +3,7 @@ import compnayImg from "../assets/compnayImg.png";
 import { Link } from "react-router";
 
 const Company = ({ singleCompany }) => {
-  const { name, location, jobs, industry, website, requirements } =
+  const { name, location, jobs, industry, website} =
     singleCompany;
   const [showModal, setShowModal] = useState(false);
 
