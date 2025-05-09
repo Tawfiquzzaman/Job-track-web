@@ -40,7 +40,7 @@ const Login = () => {
 
     signIn(email, password)
       .then((result) => {
-        console.log("Logged in user:", result.user);
+        //console.log("Logged in user:", result.user);
         setSuccess(true);
         navigate("/");
       })
@@ -54,7 +54,7 @@ const Login = () => {
   const handleGoogleLogin = () => {
     googleSignIn()
       .then((result) => {
-        console.log(result.user);
+        //console.log(result.user);
         navigate("/");
       })
       .catch((error) => {
