@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Companies from "../pages/Companies";
 import PrivateRoute from "../Provider/PrivateRoute";
+import UserProfile from "../pages/UserProfile";
 
 const HomeLayout = () => {
   const data = useLoaderData();
@@ -14,8 +15,9 @@ const HomeLayout = () => {
 
         <nav className="">
           <Navbar>
-            
+          
           </Navbar>
+          
           
         </nav>
       </header>
@@ -23,6 +25,7 @@ const HomeLayout = () => {
         <section className="main">
           <Outlet></Outlet>
           <PrivateRoute>
+            
           <Companies data={data}></Companies>
           </PrivateRoute>
           

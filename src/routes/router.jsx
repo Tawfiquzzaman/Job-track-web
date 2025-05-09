@@ -5,6 +5,7 @@ import Companies from "../pages/Companies";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AuthLayout from "../layouts/AuthLayout";
+import UserProfile from "../pages/UserProfile";
 
 const router = createBrowserRouter(
     [
@@ -44,6 +45,10 @@ const router = createBrowserRouter(
                 }
             ]
 
+        },
+        {
+            path: '/profile',
+            element: <UserProfile></UserProfile>
         },
         {
             path: '/jobs',

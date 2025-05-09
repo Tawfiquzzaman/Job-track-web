@@ -1,11 +1,12 @@
 import React, { use } from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import userImg from "../../assets/userImg.png";
 import navIcon from "../../assets/navIcon.png";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
+  const navigate = useNavigate();
   const handleLogout = () => {
     logOut()
       .then(() => {
@@ -14,6 +15,10 @@ const Navbar = () => {
       .catch((error) => {
         console.log(error);
       });
+  };
+
+  const handleAvatarClick = () => {
+    navigate("/profile");
   };
 
   const links = (
@@ -76,6 +81,7 @@ const Navbar = () => {
               className="w-8 mr-3 rounded-full"
               src={user.photoURL || userImg}
               alt="User"
+              onClick={handleAvatarClick}
             />
             <button
               onClick={handleLogout}
