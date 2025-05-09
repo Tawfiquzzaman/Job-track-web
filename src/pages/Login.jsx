@@ -1,7 +1,21 @@
-import React from "react";
+import React, { use } from "react";
 import { Link } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
+
+ const {googleSignIn} = use(AuthContext);
+
+ const handleGoogleLogin = () =>{
+  googleSignIn()
+  .then(result => {
+    console.log(result.user);
+  })
+  .catch(error => {
+    console.log(error);
+  })
+ }
+
   return (
     <div className="flex justify-center min-h-screen items-center">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-2xl">
@@ -42,7 +56,7 @@ const Login = () => {
               </svg>
               Login with GitHub
             </button>
-            <button className="btn bg-white text-black border-[#e5e5e5]">
+            <button onClick={handleGoogleLogin} className="btn bg-white text-black border-[#e5e5e5]">
               <svg
                 aria-label="Google logo"
                 width="16"

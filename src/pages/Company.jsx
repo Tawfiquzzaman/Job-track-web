@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import compnayImg from "../assets/compnayImg.png";
 import { Link } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Company = ({ singleCompany }) => {
   const { name, location, jobs, industry, website} =
     singleCompany;
   const [showModal, setShowModal] = useState(false);
+  const {isAuthenticated} = useContext(AuthContext);
+
+  const handleDetailsClick =()=>{
+    if (isAuthenticated) {
+      setShowModal(true);
+      } else {
+      alert("You must be logged in to view job details.");
+      }
+  }
 
   const job = jobs && jobs.length > 0 ? jobs[0] : null;
 
@@ -34,7 +44,7 @@ const Company = ({ singleCompany }) => {
           )}
           <div className="card-actions">
             <button
-              onClick={() => setShowModal(true)}
+              onClick={handleDetailsClick}
               className="btn bg-[#3973ac] text-white"
             >
               Details
@@ -43,7 +53,7 @@ const Company = ({ singleCompany }) => {
         </div>
       </div>
 
-      {showModal && (
+      {isAuthenticated && showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-xl w-[90%] max-w-2xl max-h-[80vh] overflow-y-auto shadow-lg relative">
             <button
