@@ -11,8 +11,12 @@ const HomeLayout = () => {
   return (
     <div>
       <header>
+
         <nav className="">
-          <Navbar></Navbar>
+          <Navbar>
+            
+          </Navbar>
+          
         </nav>
       </header>
       <main className=""> 

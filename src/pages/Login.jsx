@@ -1,40 +1,98 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
+  const { googleSignIn, signIn, forgetPassword } = useContext(AuthContext);
+  const navigate = useNavigate();
 
- const {googleSignIn, signIn} = useContext(AuthContext);
- const navigate = useNavigate();
+  const [errorMsg, setErrorMsg] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [email, setEmail] = useState("");
+  const { user, logOut } = useContext(AuthContext);
 
- //Using email
- const handleLogIn = e =>{
-  e.preventDefault();
-  const form = e.target;
-  const email = form.email.value;
-  const password = form.password.value;
+  const emailRef = useRef();
 
-  signIn(email, password)
-  .then((result) => {
-    console.log("Logged in user:", result.user);
-    navigate("/");
-  })
-  .catch((error) => {
-    console.error("Login error:", error.message);
-  });
- }
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        console.log("User logged out");
+      })
+      .catch((error) => {
+        console.error("Logout error:", error);
+      });
+  };
 
- //Google log in
+  //Using email
+  const handleLogIn = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
 
- const handleGoogleLogin = () =>{
-  googleSignIn()
-  .then(result => {
-    console.log(result.user);
-  })
-  .catch(error => {
-    console.log(error);
-  })
- }
+    //reset success
+    setSuccess(false);
+    //reset error msg
+    setErrorMsg("");
+
+    const passwordErrors = [];
+    if (password.length < 6) {
+      passwordErrors.push("Password must be at least 6 characters.");
+    }
+    if (!/[A-Z]/.test(password)) {
+      passwordErrors.push("Password must contain an uppercase letter.");
+    }
+    if (!/[a-z]/.test(password)) {
+      passwordErrors.push("Password must contain a lowercase letter.");
+    }
+
+    if (passwordErrors.length > 0) {
+      setErrorMsg(passwordErrors.join(" "));
+      return;
+    }
+
+    signIn(email, password)
+      .then((result) => {
+        console.log("Logged in user:", result.user);
+        setSuccess(true);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error("Login error:", error.message);
+        // alert("Sign in Failed");
+        setErrorMsg(error.message);
+      });
+  };
+
+  //Google log in
+
+  const handleGoogleLogin = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  // setErrorMsg("");
+
+  const handleForgetPass = () => {
+    console.log("Email for reset:", email);
+    if (!email) {
+      alert("Please enter your email address.");
+      return;
+    }
+
+    forgetPassword(email)
+      .then(() => {
+        alert("Check your email to reset your password.");
+      })
+      .catch((error) => {
+        console.error("Password reset error:", error.message);
+      });
+  };
 
   return (
     <div className="flex justify-center min-h-screen items-center">
@@ -44,11 +102,29 @@ const Login = () => {
         </h2>
         <div className="card-body bg-[#3973ac]/70">
           <form onSubmit={handleLogIn} className="fieldset flex flex-col gap-5">
-            <input name="email" type="email" className="input" placeholder="Email" />
+            <input
+              name="email"
+              type="email"
+              className="input"
+              placeholder="Email"
+              ref={emailRef}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-            <input name="password" type="password" className="input" placeholder="Password" />
+            <input
+              name="password"
+              type="password"
+              className="input"
+              placeholder="Password"
+            />
+            <p className="text-purple-500">
+              Password must contain 6 character. One Uppercase and one Lowercase
+              letter
+            </p>
             <div>
-              <a className="link link-hover">Forgot password?</a>
+              <a onClick={handleForgetPass} className="link link-hover">
+                Forgot password?
+              </a>
             </div>
             <div>
               <p>
@@ -58,9 +134,13 @@ const Login = () => {
                 </Link>
               </p>
             </div>
-            <button type="submit" className="btn btn-neutral mt-4">Login</button>
-            <div className="border-b-1 opacity-50 text-center"><span className="font-bold text-md text-center">or</span></div>
-            
+            <button type="submit" className="btn btn-neutral mt-4">
+              Login
+            </button>
+            <div className="border-b-1 opacity-50 text-center">
+              <span className="font-bold text-md text-center">or</span>
+            </div>
+
             <button className="btn bg-black text-white border-black">
               <svg
                 aria-label="GitHub logo"
@@ -76,7 +156,10 @@ const Login = () => {
               </svg>
               Login with GitHub
             </button>
-            <button onClick={handleGoogleLogin} className="btn bg-white text-black border-[#e5e5e5]">
+            <button
+              onClick={handleGoogleLogin}
+              className="btn bg-white text-black border-[#e5e5e5]"
+            >
               <svg
                 aria-label="Google logo"
                 width="16"
@@ -107,6 +190,22 @@ const Login = () => {
               Login with Google
             </button>
           </form>
+          {user ? (
+            <>
+              <span>{user.email}</span>
+              <button onClick={handleLogout} className="btn btn-error">
+                Logout
+              </button>
+            </>
+          ) : (
+            <Link to="/auth/login" className="btn btn-primary">
+              Login
+            </Link>
+          )}
+          {errorMsg && <p className="text-red-600">{errorMsg}</p>}
+          {success && (
+            <p className="text-green-500">User Logged in Successfully</p>
+          )}
         </div>
       </div>
     </div>
