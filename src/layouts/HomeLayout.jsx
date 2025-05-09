@@ -3,6 +3,7 @@ import { Outlet, useLoaderData } from "react-router";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Companies from "../pages/Companies";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 const HomeLayout = () => {
   const data = useLoaderData();
@@ -17,7 +18,10 @@ const HomeLayout = () => {
       <main className=""> 
         <section className="main">
           <Outlet></Outlet>
+          <PrivateRoute>
           <Companies data={data}></Companies>
+          </PrivateRoute>
+          
         </section>
       </main>
       <footer className="">

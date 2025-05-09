@@ -10,8 +10,8 @@ const router = createBrowserRouter(
     [
         {
             path: '/',
-            loader: () => fetch('jobs.json'),
             element: <HomeLayout></HomeLayout>,
+            loader: () => fetch('/jobs.json'),
             children: [
                 {
                     
@@ -21,7 +21,7 @@ const router = createBrowserRouter(
 
                 },
                 {
-                    path: '/companies/:id',
+                    path: 'companies',
                     element: <Companies></Companies>,
                     
 
@@ -33,12 +33,12 @@ const router = createBrowserRouter(
             element: <AuthLayout></AuthLayout>,
             children: [
                 {
-                    path: '/auth/login',
+                    path: 'login',
                     element: <Login></Login>,
 
                 },
                 {
-                    path: '/auth/register',
+                    path: 'register',
                     element: <Register></Register>,
 
                 }

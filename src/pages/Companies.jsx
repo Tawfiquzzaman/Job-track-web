@@ -25,7 +25,7 @@ const Companies = ({data}) => {
 
             <Suspense fallback={<span className="loading loading-dots loading-lg"></span>}>
             {
-                data.map((singleCompany) => <Company singleCompany={singleCompany}></Company>)
+                data.map((singleCompany) => <Company key={singleCompany.id} singleCompany={singleCompany}></Company>)
             }
             </Suspense>
         </div>

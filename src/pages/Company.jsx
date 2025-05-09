@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import compnayImg from "../assets/compnayImg.png";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Company = ({ singleCompany }) => {

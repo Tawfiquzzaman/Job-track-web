@@ -1,10 +1,30 @@
-import React, { use } from "react";
-import { Link } from "react-router";
+import React, { useContext } from "react";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Login = () => {
 
- const {googleSignIn} = use(AuthContext);
+ const {googleSignIn, signIn} = useContext(AuthContext);
+ const navigate = useNavigate();
+
+ //Using email
+ const handleLogIn = e =>{
+  e.preventDefault();
+  const form = e.target;
+  const email = form.email.value;
+  const password = form.password.value;
+
+  signIn(email, password)
+  .then((result) => {
+    console.log("Logged in user:", result.user);
+    navigate("/");
+  })
+  .catch((error) => {
+    console.error("Login error:", error.message);
+  });
+ }
+
+ //Google log in
 
  const handleGoogleLogin = () =>{
   googleSignIn()
@@ -23,10 +43,10 @@ const Login = () => {
           Login Your Account
         </h2>
         <div className="card-body bg-[#3973ac]/70">
-          <fieldset className="fieldset flex flex-col gap-5">
-            <input type="email" className="input" placeholder="Email" />
+          <form onSubmit={handleLogIn} className="fieldset flex flex-col gap-5">
+            <input name="email" type="email" className="input" placeholder="Email" />
 
-            <input type="password" className="input" placeholder="Password" />
+            <input name="password" type="password" className="input" placeholder="Password" />
             <div>
               <a className="link link-hover">Forgot password?</a>
             </div>
@@ -38,7 +58,7 @@ const Login = () => {
                 </Link>
               </p>
             </div>
-            <button className="btn btn-neutral mt-4">Login</button>
+            <button type="submit" className="btn btn-neutral mt-4">Login</button>
             <div className="border-b-1 opacity-50 text-center"><span className="font-bold text-md text-center">or</span></div>
             
             <button className="btn bg-black text-white border-black">
@@ -86,7 +106,7 @@ const Login = () => {
               </svg>
               Login with Google
             </button>
-          </fieldset>
+          </form>
         </div>
       </div>
     </div>
