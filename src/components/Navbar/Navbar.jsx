@@ -1,16 +1,39 @@
-import React from "react";
-import { NavLink } from "react-router";
-import userImg from '../../assets/userImg.png'
-import navIcon from '../../assets/navIcon.png'
+import React, { use } from "react";
+import { Link, NavLink, useNavigate } from "react-router";
+import userImg from "../../assets/userImg.png";
+import navIcon from "../../assets/navIcon.png";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = use(AuthContext);
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        alert("You logged out successfully!!");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
-    const links = <>
-    <li className="text-white"><NavLink to='/'>Home</NavLink></li>
-    <li className="text-white"><NavLink to='/jobs'>Jobs</NavLink></li>
-    <li className="text-white"><NavLink to='/company'>Companies</NavLink></li>
-    
+  const handleAvatarClick = () => {
+    navigate("/profile");
+  };
+
+  const links = (
+    <>
+      <li className="text-white">
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li className="text-white">
+        <NavLink to="/jobs">Jobs</NavLink>
+      </li>
+      <li className="text-white">
+        <NavLink to="/company">Companies</NavLink>
+      </li>
     </>
+  );
 
   return (
     <div className="navbar bg-[#3973ac] shadow-sm ">
@@ -40,16 +63,40 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-white">Job <span><img className="w-8" src={navIcon} alt="" /></span>Track</a>
+        <a className="btn btn-ghost text-xl text-white">
+          Job{" "}
+          <span>
+            <img className="w-8" src={navIcon} alt="" />
+          </span>
+          Track
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {links}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <img className="w-8 mr-3" src={userImg} alt="" />
-        <a className="btn btn-primary text-black rounded-full">Log In</a>
+        {user ? (
+          <>
+            <img
+              className="w-8 mr-3 rounded-full"
+              src={user.photoURL || userImg}
+              alt="User"
+              onClick={handleAvatarClick}
+            />
+            <button
+              onClick={handleLogout}
+              className="btn bg-red-500 text-white rounded-full"
+            >
+              Log Out
+            </button>
+          </>
+        ) : (
+          <Link to="/auth/login">
+            <button className="btn btn-primary text-black rounded-full">
+              Log In
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

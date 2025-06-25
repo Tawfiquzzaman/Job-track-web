@@ -1,16 +1,54 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
+import Home from "../pages/Home";
+import Companies from "../pages/Companies";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import AuthLayout from "../layouts/AuthLayout";
+import UserProfile from "../pages/UserProfile";
 
 const router = createBrowserRouter(
     [
         {
             path: '/',
-            element: <HomeLayout></HomeLayout>
+            element: <HomeLayout></HomeLayout>,
+            loader: () => fetch('/jobs.json'),
+            children: [
+                {
+                    
+                    index: true,
+                    element: <Home></Home>,
+
+
+                },
+                {
+                    path: 'companies',
+                    element: <Companies></Companies>,
+                    
+
+                }
+            ]
         },
         {
             path: '/auth',
-            element: <h2>Authentication Layout</h2>,
+            element: <AuthLayout></AuthLayout>,
+            children: [
+                {
+                    path: 'login',
+                    element: <Login></Login>,
 
+                },
+                {
+                    path: 'register',
+                    element: <Register></Register>,
+
+                }
+            ]
+
+        },
+        {
+            path: '/profile',
+            element: <UserProfile></UserProfile>
         },
         {
             path: '/jobs',
